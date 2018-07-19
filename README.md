@@ -4,10 +4,6 @@
 本博客是在[leopard](http://baixin.io) 博客模板上个性化修改而成，是一个简洁的博客模板。
 如果你也喜欢，请移步原作者博客fork模板并个性化，如果喜欢我的个性化设置，也可以fork我的博客并个性化，但请务必删除我的文章，以免对你造成困扰。
 
-# 使用jekyll搭建个人博客教程
-
-[Jekyll搭建个人博客](http://www.heshengbang.tech/2017/11/jekyll搭建个人博客/)  :  使用Jekyll搭建个人博客的教程
-
 # jekyll主题
 
 [JEkyll主题网站](http://jekyllthemes.org) 使用方式说明
