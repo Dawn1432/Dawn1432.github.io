@@ -3,4 +3,4 @@ layout: page
 title: 关于我 
 ---
 
-一个JAVA开发工程师，开源项目爱好者。
+一个学JAVA的人，现在还在学JAVA，以后可能还是学JAVA。
