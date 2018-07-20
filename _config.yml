@@ -1,7 +1,7 @@
 # Basic
 title: crazdxp
 subtitle: 个人博客
-description: 记性不好，写点东西。
+description: Because it's there
 # 头像里面的标题
 avatarTitle: crazdxp
 # 头像里面的描述
@@ -12,7 +12,7 @@ url: ""
 # Social
 social:
     weibo: crazdxp狂想曲
-    weiboUrl: https://weibo.com/3944727891/profile
+    weiboUrl: 3944727891/profile
     github: Dawn1432
     twitter: crazdxp(其实没有)
     mail: crazdxp@gmail.com
