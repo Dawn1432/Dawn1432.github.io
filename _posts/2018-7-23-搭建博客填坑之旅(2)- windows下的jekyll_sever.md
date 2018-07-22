@@ -15,8 +15,8 @@ tags: create_blog
 <hr> 
  - 第四步，下载jekyll，执行gem install jekyll。
  - 第五步，用jekyll新建一个博客文件夹，jekyll new blog，然后转进去，cd blog/
- - 第六步，哇，现在是不是jekyll s就可以本地运行了？！！超级激动٩(๑>◡<๑)۶。但是，当梦想照进现实。<img src='https://dawn1432.github.io\images\搭建博客填坑之旅\bundler_error.png' align='margin-left' style=' width:600px;height:600 px'/>
- - 看了下原模板博主的博客，好像是需要安装bundler，于是gem install bundller。然后再jekyll s。(╯‵□′)╯︵┻━┻<img src='https://dawn1432.github.io\images\搭建博客填坑之旅\minima_error.png' align='margin-left' style=' width:900px;height:900 px'/>
+ - 第六步，哇，现在是不是jekyll s就可以本地运行了？！！超级激动٩(๑>◡<๑)۶。先用jekyll -v试一下命令，当梦想照进现实。<img src='https://dawn1432.github.io\images\搭建博客填坑之旅\bundler_error.png' align='margin-left' style=' width:600px;height:600 px'/>
+ - 看了下原模板博主的博客，好像是需要安装bundler，于是gem install bundller。然后再jekyll -v。(╯‵□′)╯︵┻━┻<img src='https://dawn1432.github.io\images\搭建博客填坑之旅\minima_error.png' align='margin-left' style=' width:900px;height:900 px'/>
  - 如此反复，阁下大概需要执行以下几个命令gem install minima，gem install tzinfo-data，gem install wdm。如果这个新建的blog能成功运行的话，访问localhost:4000就应该可以看到一个正确的页面。
  - 接下来就不用管这新建的blog了，进入你拉取的blog仓库的位置，执行jekyll s就可以在本地看到自己的博客了。最后，如果阁下需要用到我的模板的话大概还要安装下面两个依赖，gem install jekyll-paginate，gem install jekyll-sitema。如果执行了这两条命令，还是提示这个依赖没有的话，就检查一下博客仓库根目录下的Gemfile，照着格式把这两个的依赖加进去。
  - 老泪纵横，终于不用冒着构建失败的风险，推到github再看效果了。
