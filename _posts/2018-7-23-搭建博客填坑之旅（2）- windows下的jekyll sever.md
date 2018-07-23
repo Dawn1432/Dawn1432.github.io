@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 搭建博客填坑之旅（2）- windows下的jekyll_sever
+title: 搭建博客填坑之旅（2）- windows下的jekyll sever
 date: 2018-7-19
 tags: create_blog
 ---
@@ -11,7 +11,7 @@ tags: create_blog
  - 第二步，安装ruby，最好安装在C,D,E,F...盘的根目录，然后勾选多选框的中间那项，说是可以自动配置环境变量。解压DevKit到任意位置。
  - 第三步，转到DevKit文件夹中，可以看到有一个dk.rb，打开git bash执行命令，ruby dk.rb init -> 出现了一个文件config.yml -> 打开cofig.yml在末尾加上ruby的安装位置（比如：D:\Ruby23-x64）-> 执行ruby dk.rb review -> <img src='https://dawn1432.github.io\images\搭建博客填坑之旅\ruby_review.png' align='margin-left' style=' width:600px;height:600 px'/>没说配置有问题的话就执行ruby dk.rb install。
 <hr>
-至此依赖完成配置。接下来需要下载一系列文件，如果嫌弃gem原本的源的话，可以添加ruby中国的源。由于有点ssl的证书信任问题，ruby中国论坛提供了一个解决方案：https://ruby-china.org/topics/33843
+至此依赖完成配置。接下来需要下载一系列文件，如果嫌弃gem原本的源的话，可以添加ruby中国的源。由于有点ssl的证书信任问题，ruby中国论坛提供了一个解决方案：[https://ruby-china.org/topics/33843](https://ruby-china.org/topics/33843)
 <hr> 
  - 第四步，下载jekyll，执行gem install jekyll。
  - 第五步，用jekyll新建一个博客文件夹，jekyll new blog，然后转进去，cd blog/
