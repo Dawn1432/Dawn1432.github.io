@@ -46,3 +46,10 @@ k = 10;<br>
 a:10，1，2，<font color="#FF0000">5</font>，3，12，13，4，14，15，<font color="#0000FF">11</font>，16。11<-->5<br>
 a:10，1，2，5，3，<font color="#FF0000">4</font>，13，<font color="#0000FF">12</font>，14，15，11，16。12<-->4<br>
 a:<font color="#88FF">4</font>，1，2，5，3，<font color="#00FFFF">10</font>，13，12，14，15，11，16。10<-->4<br>
+第一趟结果：a:4，1，2，5，3，10，13，12，14，15，11，16。<br>
+后边都是一样，分开之后分别递归。
+
+# 我们来对比一下
+第一种：5，1，2，4，3，10，13，12，14，15，11，16。<br>
+第二种：4，1，2，5，3，10，13，12，14，15，11，16。<br>
+<img src='https://dawn1432.github.io\images\排序与查找\快速排序\无奈.jpg' align='margin-left' style=' width:75px;height:75px;margin:0;'/><br>
