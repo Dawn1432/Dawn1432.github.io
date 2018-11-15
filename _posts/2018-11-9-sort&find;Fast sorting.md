@@ -54,8 +54,8 @@ a[i]=temp;
 （4）to （1）直到i=j；<br>
 （5）
 ```
-a[0] = a[i]/a[j]
-a[i]/a[j] = k
+a[0] = a[i]; //或者a[0] = a[j];
+a[i] = k; //或者a[j] = k;
 ```
 （注意：为了保证最后与a[0]交换的值一定比a[0]小，所以一定是j先变化。）<br>
 第一趟；<br>
@@ -103,7 +103,7 @@ a:10，4，1，2，11，3，5，12，14，15，13，16。12<-->4<br>
 ## （一）三数取中+插入排序
 当排序序列长度效率某一个值时，快排并没有插入排序效率高，通常我们选择N=10；所以，当子序列长度小于等于10时，使用插入排序。<br>
 但是仍然不能处理重复数组。
-## （二）三数取中+插入排序+key值聚合
-在以上的模式下，每趟排序之后将key聚合到key的周围可以大大解决重复数组对排序效率的影响。<br>
-<img src='https://dawn1432.github.io\images\排序与查找\快速排序\快排测试数据.png' align='margin-left' style=' width:75px;height:75px;margin:0;'/><br>
+## （二）三数取中+插入排序+key值聚集
+在以上的模式下，每趟排序之后将key聚集到key的周围可以大大解决重复数组对排序效率的影响。<br>
+<img src='https://dawn1432.github.io\images\排序与查找\快速排序\快排测试数据.png' align='margin-left' style=' width:800px;height:170px;margin:0;'/><br>
 数据来自：[https://yq.aliyun.com/ziliao/384039](https://yq.aliyun.com/ziliao/384039)
