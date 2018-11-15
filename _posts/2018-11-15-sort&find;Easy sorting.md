@@ -29,3 +29,27 @@ tags: sort&find
 每一步将一个待排序记录，插入到已经有序的序列中去。
 
 排序细节：将选中的待排序记录与有序记录从后往前依次比较，将所有应该排在该记录之后的有序记录全部脚标+1。也可以用双链表实现，但是感觉代价过大。（单链表似乎实现不了）
+
+### 换位骚操作
+在数组中换位，大概只能难到初学者。但是你的换位思路够骚吗？<br>
+1、说起换位，很多人马上就想到，使用一个临时变量。
+```
+temp = a[i];
+a[i] = a[j];
+a[j] = temp;
+```
+2、但是要是不用临时变量呢？于是有了以下操作。
+```
+a[i] = a[i] + a[j];
+a[j] = a[i] - a[j];
+a[i] = a[i] - a[j];
+```
+<img src='https://dawn1432.github.io\images\排序与查找\简单排序\令人窒息.jpg' align='margin-left' style=' width:75px;height:75px;margin:0;'/><br>
+但是以上做法还有问题，当a[i] + a[j]超出定义范围时，数据会出错。<br>
+3、于是有了以下操作，异或。
+```
+a[i] ^=a[j];
+a[j] ^=a[i];
+a[i] ^=a[j];
+```
+<img src='https://dawn1432.github.io\images\排序与查找\简单排序\骚操作.gif' align='margin-left' style=' width:75px;height:75px;margin:0;'/><br>
