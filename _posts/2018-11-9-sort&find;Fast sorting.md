@@ -109,7 +109,9 @@ a:10，4，1，2，11，3，5，12，14，15，13，16。12<-->4<br>
 数据来自：[https://yq.aliyun.com/ziliao/384039](https://yq.aliyun.com/ziliao/384039)
 
 ### 快速排序进阶版
+注意： 以下内容由作者参考[https://www.cnblogs.com/nullzx/p/5880191.html](https://www.cnblogs.com/nullzx/p/5880191.html)完成。
 ## （一）单端扫描快速排序
+<img src='https://dawn1432.github.io\images\排序与查找\快速排序\单向扫描快排.png' align='margin-left' style=' width:800px;height:170px;margin:0;'/><br>
 这里的单端扫描其实还是一个基础版，先讲一讲这种扫描基本思路，后面会以这种扫描思路为基础进行进阶。
 每趟的操作如下：<br>
 （1）选择一个中轴k。（以最左边为中轴）。<br>
@@ -120,7 +122,6 @@ a:10，4，1，2，11，3，5，12，14，15，13，16。12<-->4<br>
 2）a[j]<=k；<br>
 则i++，然后交换a[i]和a[j]，然j++。【此时，小于等于k的部分多了一个元素；大于等于k的部分的第一个元素移动到了最后一个，这个移动没有多余的意义，纯粹是为了保持区间特性。】<br>
 （4）交换a[i]和a[0]。<br>
-<img src='https://dawn1432.github.io\images\排序与查找\快速排序\单向扫描快排.png' align='margin-left' style=' width:800px;height:170px;margin:0;'/><br>
 原数组：<br>
 a:10，1，2，11，3，12，13，4，14，15，5，16。<br>
 第一趟：<br>
@@ -175,6 +176,7 @@ i=5,j=11; => a[j]>k; => j++;
 ```
 然后就是分别递归了。
 ## （二）三向切分快速排序
+<img src='https://dawn1432.github.io\images\排序与查找\快速排序\三向切分快排.png' align='margin-left' style=' width:800px;height:170px;margin:0;'/><br>
 每趟操作如下：
 （1）选择一个中轴k。（以最左边为中轴）。<br>
 （2）定义当前趟的i，j，h，并舍得最终将原区间a[begin,end]分为四段，使得a[begin,i-1]<k,a[i,k-1]=k,a[k,j-1]未知，a[j,end]>k。最后将所有的未知数据转移到对应的区间中。i初始化指向中轴元素，h初始化指向第一个未知元素，j初始化指向区间最后一个元素。当未知元素为空时，当前趟结束。<br>
@@ -197,7 +199,6 @@ a[i] = a[j];
 a[j] = a[h];
 a[h] = temp;
 ```
-<img src='https://dawn1432.github.io\images\排序与查找\快速排序\三向切分快排.png' align='margin-left' style=' width:800px;height:170px;margin:0;'/><br>
 原数组：<br>
 a:10，1，2，11，3，12，13，4，14，15，5，16。<br>
 第一趟：<br>
@@ -252,6 +253,7 @@ i=5,j=6,h=6; => a[h]>k; => {
 ```
 然后就是分别递归了。
 ## （三）双轴快速排序
+<img src='https://dawn1432.github.io\images\排序与查找\快速排序\双轴快排.png' align='margin-left' style=' width:800px;height:170px;margin:0;'/><br>
 主要思想基本和三向切分一样，但是选择了两个轴通常选择数组的左端和右端。<br>
 每趟操作如下：<br>
 （1）选择双轴k1，k2。（左右端）比较k1和k2，若顺序不正确则交换k1和k2。<br>
@@ -276,7 +278,6 @@ a[j] = a[h];
 a[h] = temp;
 ```
 （4）交换a[begin]和a[i]，交换a[end]和a[j]。
-<img src='https://dawn1432.github.io\images\排序与查找\快速排序\双轴快排.png' align='margin-left' style=' width:800px;height:170px;margin:0;'/><br>
 原数组：<br>【跟上面的原数组有点不一样】
 a:10，1，2，11，3，12，16，4，14，15，5，13。<br>
 第一趟：<br>
@@ -321,7 +322,7 @@ i=5,j=10;h=8; => k2<a[h]; => {
  结果:10，1，2，3，5，4，11，12，14，15，16，13。
 ---------------------------------------------------------
  j--;
- j=8; 
+ j=8;
  a[j]>k2;
  结果:10，1，2，3，5，4，11，12，14，15，16，13。
 ---------------------------------------------------------
