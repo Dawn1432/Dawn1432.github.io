@@ -24,5 +24,5 @@ tags: experience_note(job_interview)
  - spring
     - aop的实现原理
  - OSI七层协议结构/五层协议结构
- - java实现的简答socket通信
+ - java实现的简单socket通信
  - 缓存淘汰算法LFU&LRU
