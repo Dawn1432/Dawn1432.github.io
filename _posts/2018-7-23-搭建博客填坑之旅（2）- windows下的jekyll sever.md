@@ -12,7 +12,10 @@ tags: create_blog
  - 第三步，转到DevKit文件夹中，可以看到有一个dk.rb，打开git bash执行命令，ruby dk.rb init -> 出现了一个文件config.yml -> 打开cofig.yml在末尾加上ruby的安装位置（比如：D:\Ruby23-x64）-> 执行ruby dk.rb review -> <img src='https://dawn1432.github.io\images\搭建博客填坑之旅\ruby_review.png' align='margin-left' style=' width:600px;height:600 px'/>没说配置有问题的话就执行ruby dk.rb install。
 <hr>
 至此依赖完成配置。接下来需要下载一系列文件，如果嫌弃gem原本的源的话，可以添加ruby中国的源。由于有点ssl的证书信任问题，ruby中国论坛提供了一个解决方案：<a href="https://ruby-china.org/topics/33843" target="_blank">https://ruby-china.org/topics/33843</a>
-<hr> 
+<hr>
+2019年6月12日更新：最近尝试重新搭建环境，在添加gem sources --add  http://gems.ruby-china.org 时出错了，如下图：<img src='https://dawn1432.github.io\images\搭建博客填坑之旅\gem_add_error.png' align='margin-left' style=' width:900px;height:900 px'/>
+后查证，ruby中国早就发公告说域名修改了， .org 修改成了 .com ，各位朋友注意一下。
+<hr>
  - 第四步，下载jekyll，执行gem install jekyll。
  - 第五步，用jekyll新建一个博客文件夹，jekyll new blog，然后转进去，cd blog/
  - 第六步，哇，现在是不是jekyll s就可以本地运行了？！！超级激动٩(๑>◡<๑)۶。先用jekyll -v试一下命令，当梦想照进现实。<img src='https://dawn1432.github.io\images\搭建博客填坑之旅\bundler_error.png' align='margin-left' style=' width:600px;height:600 px'/>
