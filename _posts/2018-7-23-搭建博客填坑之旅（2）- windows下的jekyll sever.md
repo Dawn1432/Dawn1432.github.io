@@ -13,7 +13,7 @@ tags: create_blog
 <hr>
 至此依赖完成配置。接下来需要下载一系列文件，如果嫌弃gem原本的源的话，可以添加ruby中国的源。由于有点ssl的证书信任问题，ruby中国论坛提供了一个解决方案：<a href="https://ruby-china.org/topics/33843" target="_blank">https://ruby-china.org/topics/33843</a>
 <hr>
-2019年6月12日更新：最近尝试重新搭建环境，在添加gem sources --add  http://gems.ruby-china.org 时出错了，如下图：<img src='https://dawn1432.github.io\images\搭建博客填坑之旅\gem_add_error.png' align='margin-left' style=' width:900px;height:900 px'/>
+2019年6月12日更新：最近尝试重新搭建环境，在添加gem sources --add  http://gems.ruby-china.org 时出错了，如下图：<img src='https://dawn1432.github.io\images\搭建博客填坑之旅\gem_add_error.png' align='margin-left' style=' width:600px;height:600 px'/>
 后查证，ruby中国早就发公告说域名修改了， .org 修改成了 .com ，各位朋友注意一下。
 <hr>
  - 第四步，下载jekyll，执行gem install jekyll。
