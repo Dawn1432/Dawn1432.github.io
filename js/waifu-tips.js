@@ -398,11 +398,12 @@ function initModel(){
 
         /* 首次访问加载 指定模型 的 指定材质 */
 
-        var modelId = 2;            // 模型 ID
-        var modelTexturesId = 49;    // 材质 ID
+        var modelId = 3;            // 模型 ID
+        //var modelTexturesId = 49;    // 材质 ID
 
-    } loadModel(modelId, modelTexturesId);
-
+    } 
+	//loadModel(modelId, modelTexturesId); 使用bilibili 22默认材质进行初始化
+	loadModel(modelId);
 
     $.each(waifuJson.mouseover, function (index, tips){
         $(document).on("mouseover", tips.selector, function (){
