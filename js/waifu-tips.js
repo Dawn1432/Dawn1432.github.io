@@ -174,11 +174,11 @@ function hideMessage(timeout){
 var waifuJson = {
     "mouseover": [
         {
-            "selector": ".content-wrap a[href^='http']",
+            "selector": "marquee > a[href^='http']",
             "text": ["要看看 <span style=\"color:#0099cc;\">{text}</span> 么？"]
         },
         {
-            "selector": ".logo",
+            "selector": ".info-back",
             "text": ["点击前往首页，想回到上一页可以使用浏览器的后退功能哦"]
         },
         {
@@ -186,7 +186,7 @@ var waifuJson = {
             "text": ["觉得文章有帮助的话，可以分享给更多需要的朋友呢"]
         },
         {
-            "selector": "#tor_show",
+            "selector": "a[title=archive]",
             "text": ["翻页比较麻烦吗，点击可以显示这篇文章的目录呢"]
         },
         {
@@ -246,7 +246,11 @@ var waifuJson = {
             "text": ["找不到想看的内容？搜索看看吧"]
         },
         {
-            "selector": ".paging",
+            "selector": ".previous",
+            "text": ["去上一页看看吧"]
+        },
+		{
+            "selector": ".next",
             "text": ["去下一页看看吧"]
         },
         {
@@ -258,11 +262,11 @@ var waifuJson = {
             "text": ["这里记录着我搬家的历史呢"]
         },
         {
-            "selector": ".aboutme",
+            "selector": ".social",
             "text": ["发现主人出没地点！", "这里有主人的联系方式"]
         },
         {
-            "selector": ".donate-qrcode",
+            "selector": ".dashang",
             "text": ["主人最近在吃土呢，很辛苦的样子。给他一些钱钱吧~"]
         },
         {
