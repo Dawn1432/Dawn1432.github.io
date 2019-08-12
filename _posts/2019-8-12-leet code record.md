@@ -51,7 +51,7 @@ public int maxDepth(TreeNode root) {
 ```
 一次AC，牛逼。<br>
 好，改了一个符号提交第二道题，二叉树的最小深度。<br>
-<img src='https://dawn1432.github.io\images\刷题笔记-leet_code\不通过.png' align='margin-left' style=' width:150px;height:150px;margin:0;'/><br>
+<img src='https://dawn1432.github.io\images\刷题笔记-leet_code\不通过.png' align='margin-left' style=' width:500px;height:150px;margin:0;'/><br>
 <img src='https://dawn1432.github.io\images\刷题笔记-leet_code\what.jpg' align='margin-left' style=' width:150px;height:150px;margin:0;'/><br>
 百思不得其解，于是看了别人提交的答案，于是有了第二种思路：<br>
 （1）该节点是否为空，是则返回0；否则继续。<br>
