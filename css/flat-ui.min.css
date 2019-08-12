@@ -426,12 +426,12 @@
 	content: "\e660"
 }
 
-body {
+/*body {
 
 	background-color: #FFF;
     color: #555;
     
-}
+}*/
 
 }
 
@@ -475,7 +475,7 @@ a:focus {
 	line-height: 1.2
 }
 
-h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+/*h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 	font-family: inherit;
 	font-weight: 700;
 	line-height: 1.1;
@@ -522,7 +522,7 @@ h5,.h5 {
 
 h6,.h6 {
 	font-size: 12px
-}
+}*/
 
 p {
 	margin: 0 0 15px;
@@ -2335,7 +2335,7 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 	right: 3px
 }
 
-.pager {
+/*.pager {
 	display: inline-block;
 	font-size: 16px;
 	font-weight: 700;
@@ -2359,7 +2359,7 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 	border: none;
 	border-left: 2px solid #2c3e50;
 	border-radius: 0 6px 6px 0
-}
+}*/
 
 .pager li>a:hover,.pager li>span:hover,.pager li>a:focus,.pager li>span:focus {
 	background-color: #2c3e50
