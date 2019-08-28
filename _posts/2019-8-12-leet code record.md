@@ -52,7 +52,7 @@ public int maxDepth(TreeNode root) {
 一次AC，牛逼。<br>
 好，改了一个符号提交第二道题，二叉树的最小深度。<br>
 <img src='https://dawn1432.github.io\images\刷题笔记-leet_code\不通过.png' align='margin-left' style=' width:500px;height:150px;margin:0;'/><br>
-<img src='https://dawn1432.github.io\images\刷题笔记-leet_code\what.jpg' align='margin-left' style=' width:150px;height:150px;margin:0;'/><br>
+<img src='https://dawn1432.github.io\images\刷题笔记-leet_code\what.jpg' align='margin-left' style=' width:100px;height:100px;margin:0;'/><br>
 百思不得其解，于是看了别人提交的答案，于是有了第二种思路：<br>
 （1）该节点是否为空，是则返回0；否则继续。<br>
 （2）该节点的左子节点是否存在，不存在则返回右子节点的最小深度+1。<br>
@@ -74,7 +74,7 @@ public int run(TreeNode root) {
 }
 ```
 使用了逆向思维，排除着进行计算，骚是骚了点，但是这难道跟我的思路有很大区别吗？？？
-<img src='https://dawn1432.github.io\images\刷题笔记-leet_code\有什么区别.png' align='margin-left' style=' width:150px;height:150px;margin:0;'/><br>
+<img src='https://dawn1432.github.io\images\刷题笔记-leet_code\有什么区别.png' align='margin-left' style=' width:100px;height:100px;margin:0;'/><br>
 ### <font size="2">2019-08-28 ： 8/148</font>
 4、后缀表达式
 经常出现在选择题中的存在，一般让你判断后缀表达式对不对，或者计算结果是多少。<br>
@@ -92,7 +92,7 @@ public int run(TreeNode root) {
 （4）合并两部分排序结果。<br>
 这里在思路出来后，在切断的部分用单指针想了半天，但是最后还是需要双指针来解决。（自己思维太僵硬）<br>
 6、孤独的数字<br>
-<img src='https://dawn1432.github.io\images\刷题笔记-leet_code\展博念诗.png' align='margin-left' style=' width:150px;height:150px;margin:0;'/><br>
+<img src='https://dawn1432.github.io\images\刷题笔记-leet_code\展博念诗.png' align='margin-left' style=' width:200px;height:150px;margin:0;'/><br>
 现在有一个整数类型的数组，数组中素只有一个元素只出现一次，其余的元素都出现两次。<br>
 注意：<br>
 你需要给出一个线性时间复杂度的算法，你能在不使用额外内存空间的情况下解决这个问题么？<br>
@@ -100,8 +100,8 @@ Given an array of integers, every element appears twice except for one. Find tha
 Note: <br>
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?<br>
 看完题干，感觉问题不大；看完注意，时间复杂度O(n)，空间复杂度0，陷入沉思...<br>
-<img src='https://dawn1432.github.io\images\刷题笔记-leet_code\思考.gif' align='margin-left' style=' width:50px;height:50px;margin:0;'/><br>
-<img src='https://dawn1432.github.io\images\刷题笔记-leet_code\a few moments later.jpg' align='margin-left' style=' width:170px;height:100px;margin:0;'/><br>
+<img src='https://dawn1432.github.io\images\刷题笔记-leet_code\思考.gif' align='margin-left' style=' width:100px;height:100px;margin:0;'/><br>
+<img src='https://dawn1432.github.io\images\刷题笔记-leet_code\a few moments later.jpg' align='margin-left' style=' width:500px;height:200px;margin:0;'/><br>
 那很明显（看完讨论后），把每个值依次进行异或，结果就是那个孤独的值。看完之后，叹为观止。<br>
 7、二叉树的后序遍历。<br>
 递归的思路很简单，递归完左边，递归右边，最后输出该节点。<br>
@@ -139,7 +139,7 @@ while (cur != null || !stack.isEmpty()) {
 Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.<br>
 这个题放给任何一个初中生都有思路，可以计算所有点是否属于同于个一元二次函数...。<br>
 但是写程序的话这么想就太僵硬了，截距怎么算？斜率算下来除不尽怎办？有根号怎么办？一个个问题困扰着我，拉我陷入沉思（入眠）<br>
-<img src='https://dawn1432.github.io\images\刷题笔记-leet_code\入眠.jpg' align='margin-left' style=' width:50px;height:50px;margin:0;'/><br>
+<img src='https://dawn1432.github.io\images\刷题笔记-leet_code\入眠.jpg' align='margin-left' style=' width:100px;height:100px;margin:0;'/><br>
 沉思（看过讨论）过后，总结了一下思路：<br>
 1、双重循环给所有点配对，每次配对固定一个源点，遍历其他所有点。【这样就不用考虑截距，斜率相同即共线】<br>
 2、用分数表达斜率，避免除法除不尽产生误差。<br>
