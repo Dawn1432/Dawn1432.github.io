@@ -76,9 +76,6 @@ function waifuWelcome(){
     var SiteIndexUrl = 'https://dawn1432.github.io/';  // 手动指定主页
 	var SiteIndexUrlDebug = 'http://localhost:4000/' //手动指定调试主页
     //var SiteIndexUrl = window.location.protocol+'//'+window.location.hostname+'/';  // 自动获取主页
-	console.log(window.location.href);
-	console.log(window.location.href == SiteIndexUrl);
-	console.log(window.location.href == SiteIndexUrlDebug);
     if (window.location.href == SiteIndexUrl || window.location.href == SiteIndexUrlDebug) {      // 如果是主页
         var now = (new Date()).getHours();
         if (now > 23 || now <= 5) {
