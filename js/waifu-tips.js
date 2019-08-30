@@ -177,6 +177,10 @@ function hideMessage(timeout){
     $('.waifu-tips').delay(timeout).fadeTo(200, 0);
 }
 
+var myDate = new Date;
+var year = myDate.getFullYear(); //获取当前年
+var deltaY = year - 1949;
+
 var waifuJson = {
     "mouseover": [
         {
@@ -385,7 +389,7 @@ var waifuJson = {
         },
         {
             "date": "10/01",
-            "text": "<span style=\"color:#0099cc;\">国庆节</span>，新中国已经成立69年了呢"
+            "text": "<span style=\"color:#0099cc;\">国庆节</span>，新中国已经成立"+deltaY+"年了呢"
         },
         {
             "date": "11/05-11/12",
