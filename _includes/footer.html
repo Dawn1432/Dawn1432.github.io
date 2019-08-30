@@ -26,13 +26,14 @@
                     </li>
                     {% endif %}
 
-                    {% if site.social.twitter %}
-                    <!-- Twitter -->
+                    {% if site.social.bilibili %}
+                    <!-- bilibili -->
                     <li class="navigation__item_social">
-                        <a href="http://twitter.com/{{site.social.twitter}}" title="@{{site.social.twitter}}"
+                        <a href="https://space.bilibili.com/{{site.social.bilibiliUrl}}" title="@{{site.social.bilibili}} 的 bilibili"
                            target="_blank">
-                            <i class='social fa fa-twitter fa-2x'></i>
-                            <span class="label">Twitter</span>
+                            <!-- <i class='social fa fa-twitter fa-2x'></i> -->
+							<div class="social fa fa-2x" id="bilibili-icon" style="width: 37px;height: 26px;background:url(/images/mouse.png);"></div>
+                            <span class="label">BiLiBiLi</span>
                         </a>
                     </li>
                     {% endif %}
@@ -92,3 +93,13 @@
         </div>
     </footer>
 </section>
+<script>
+$("#bilibili-icon").mouseenter(function(){
+     $(this).removeAttr("style");
+	 $(this).attr("style","width: 37px;height: 26px;background:url(/images/mouseon.png);");
+});
+$("#bilibili-icon").mouseleave(function(){
+     $(this).removeAttr("style");
+	 $(this).attr("style","width: 37px;height: 26px;background:url(/images/mouse.png);");
+});
+</script>
