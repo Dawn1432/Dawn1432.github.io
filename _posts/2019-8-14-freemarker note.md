@@ -1,15 +1,15 @@
 ---
 layout: post
-title: freemaker笔记
+title: freemarker笔记
 date: 2019-08-14
 tags: experience_note
 ---
 ### 概述
 
-<p>作为一个服务器开发，理论上来讲前端和后端的东西都得懂一点。我之前的公司（学校实验室）的前端是用jsp+js来做的，而现在这边的前端则大部分是用html+freemaker来做的。那学习freemaker语法自然也就成了工作的一部分。</p>
-<p>刚开始看到.ftl文件后缀的时候是懵逼的，对于这种前端的数据交互和处理毫无头绪，后来知道这个是叫freemaker在简单看了一些用户手册之后，现阶段算是差不多能做一些基本操作了，这里对自己感觉比较重要的部分做一个记录，以供后续查阅。</p>
+<p>作为一个服务器开发，理论上来讲前端和后端的东西都得懂一点。我之前的公司（学校实验室）的前端是用jsp+js来做的，而现在这边的前端则大部分是用html+freemarker来做的。那学习freemarker语法自然也就成了工作的一部分。</p>
+<p>刚开始看到.ftl文件后缀的时候是懵逼的，对于这种前端的数据交互和处理毫无头绪，后来知道这个是叫freemarker在简单看了一些用户手册之后，现阶段算是差不多能做一些基本操作了，这里对自己感觉比较重要的部分做一个记录，以供后续查阅。</p>
 <p>反正这种东西给我的感觉是，必须结合view来进行model处理，虽然比较符合springMVC的那种思想，但是总感觉看起来不太高级的亚子，不知道以后会不会对他有所改观。</p>
-<img src='https://dawn1432.github.io\images\freemaker笔记\你怎么这个亚子.png' align='margin-left' style=' width:170px;height:150px;margin:0;'/><br>
+<img src='https://dawn1432.github.io\images\freemarker笔记\你怎么这个亚子.png' align='margin-left' style=' width:170px;height:150px;margin:0;'/><br>
 
 ### 正文
 
