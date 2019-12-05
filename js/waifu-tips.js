@@ -487,7 +487,7 @@ function loadOtherModel(){
 				loadModel(result.model['id']);
 				showMessage(result.model['message'], 3000, true);
 			}else{
-				showMessage("['禁止切换哦~']", 3000, true);
+				showMessage(['禁止切换哦~','说了不听还要点？'], 3000, true);
 			}
         }
     });
