@@ -483,8 +483,12 @@ function loadOtherModel(){
         url: '//api.fghrsh.net/live2d/'+modelTexturesRandMode+'/?id='+modelId,
         dataType: "json",
         success: function (result){
-            loadModel(result.model['id']);
-            showMessage(result.model['message'], 3000, true);
+			if(result.model['id'] == 3){
+				loadModel(result.model['id']);
+				showMessage(result.model['message'], 3000, true);
+			}else{
+				showMessage("['禁止切换哦~']", 3000, true);
+			}
         }
     });
 }
