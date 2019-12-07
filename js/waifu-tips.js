@@ -475,7 +475,9 @@ function loadRandModel(){
 
 function loadOtherModel(){
     var modelId = localStorage.getItem('modelId');
-
+	if(modelId != 3){
+		modelId = 2;
+	}
     var modelTexturesRandMode = 'switch';     // 可选 'rand'(随机), 'switch'(递增)
 
     $.ajax({
@@ -483,12 +485,8 @@ function loadOtherModel(){
         url: '//api.fghrsh.net/live2d/'+modelTexturesRandMode+'/?id='+modelId,
         dataType: "json",
         success: function (result){
-			if(result.model['id'] == 3){
-				loadModel(result.model['id']);
-				showMessage(result.model['message'], 3000, true);
-			}else{
-				showMessage(['禁止切换哦~','说了不听还要点？'], 3000, true);
-			}
+			loadModel(result.model['id']);
+			showMessage(result.model['message'], 3000, true);
         }
     });
 }
